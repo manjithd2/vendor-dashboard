@@ -26,6 +26,11 @@ header{
 	padding:5px;
 }
 
+.reg_form{
+	background-color: white;
+
+}
+
 section{
 	padding-bottom: 30px;
 }
@@ -57,7 +62,10 @@ header > .container{
 	padding-top: 100px;
 }
 
-
+#sell{
+	width: 100%;
+	margin-bottom: 5px;
+}
 
 
 
