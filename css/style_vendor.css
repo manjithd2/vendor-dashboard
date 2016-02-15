@@ -201,6 +201,44 @@ footer a:hover{
 	text-decoration: none;
 }
 
+.space-top{
+	margin-top: 90px;
+}
+
+#faq {
+	text-align: center;
+}
+
+#faq p{
+	font-size: 25px;
+}
+
+#faq button{
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 20px;
+	margin-top: 30px;
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	background-color: transparent;
+	transition: background-color 0.5s ease;
+}
+
+#faq button:hover{
+	background-color: #337fb3;
+}
+
+#faq a{
+	color: white;
+}
+
+
+#faq a:hover{
+	color: white;
+}
+
+
 @media(max-width: 786px){
 	.reg_form{
 		margin-bottom: 0px;
