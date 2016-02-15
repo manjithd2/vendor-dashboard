@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,24 @@
 	<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style_vendor.css">
+	<link rel="stylesheet" type="text/css" href="css/style_vendor_login.css">
+	<style type="text/css">
+	 header{
+	 	height: 100vh;
+	 	margin-bottom: 0px;
+	 }
+
+	 .reg_form{
+	 	padding-bottom: 15px;
+	 }
+
+	 .reg_form p{
+	 	text-align: center;
+	 	font-size: 11px;
+	 	font-weight: bold;
+	 	margin-bottom: 2px;
+	 }
+	</style>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -45,7 +64,7 @@
  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
  			</div>
  			<div class="col-md-4 reg_form">
- 				<h3>Get started today!</h3>
+ 				<h3>Login</h3>
  				<form role="form">
 				<div class="form-group">
 					  <label for="usr">Username:</label>
@@ -55,74 +74,13 @@
 					  <label for="pwd">Enter Password:</label>
 					  <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
 				</div>
-				<div class="form-group">
-					  <label for="pwd">Re-Enter Password:</label>
-					  <input type="password" class="form-control" id="pwd" placeholder="Re-Enter Password">
-				</div>
-				<button type="submit" class="btn btn-default" id="sell">START SELLING</button>
+				<button type="submit" class="btn btn-default" id="sell">LOGIN</button>
  				</form>
+ 				<p>Not a member? <a href="#">Register</a> </p> <p>   <a href="#"> Forgot Password</a></p>
  			</div>
  		</div>
  	</div>
  </header>
-
-<section id="benefits">
-	<div class="container">
-		<div class="row">
-			<h2>Benefits</h2>
-			<div class="col-md-3">
-				<img src="images/globe.jpg">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>
-			<div class="col-md-3">
-				<img src="images/globe.jpg">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>
-			<div class="col-md-3">
-				<img src="images/globe.jpg">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>
-			<div class="col-md-3">
-				<img src="images/globe.jpg">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="testimonial">
-	<div class="container">
-		<h2>Testimonials</h2>
-		<div class="quote">
-			<p class="paragraph">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			</p>
-			<p class="name">
-				Name of the person.
-			</p>
-		</div>
-	</div>
-</section>
-<section id="faq">
-	<div class="container">
-		<div class="row">
-			<h2>Frequently Asked Questions</h2>
-			<div class="col-md-6">
-				<h3>A random Question</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-			</div>
-			<div class="col-md-6">
-				<h3>A random Question</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-			</div>
-		</div>
-	</div>
-</section>
 
 <footer>
 	<div class="container">
@@ -154,15 +112,6 @@
 	</div>
 </footer>
 
-
-<script type="text/javascript">
-	$("nav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
-    });
-});
 </script>
 </body>
 </html>
