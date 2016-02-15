@@ -174,6 +174,33 @@ header > .container{
 	margin-top: 20px;
 }
 
+footer{
+	background-color: #051826;
+	color: #1e425a;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+footer a{
+	color: #1e425a;
+	text-decoration: none;
+	transition: color 0.5s ease 0.1s ;
+}
+
+footer h2{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+footer p{
+	font-size: 15px;
+}
+
+footer a:hover{
+	color: #567489;
+	text-decoration: none;
+}
+
 @media(max-width: 786px){
 	.reg_form{
 		margin-bottom: 0px;
