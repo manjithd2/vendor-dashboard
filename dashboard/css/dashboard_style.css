@@ -1,3 +1,44 @@
+#page-wrapper{
+
+	background-color: #ECECEC;
+}
+
+
+
 .order-table{
 	margin-bottom: 200px;
+	background-color: white;
+}
+
+.tab button{
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	background-color: transparent;
+	padding:15px;
+}
+
+.order-nav{
+	background-color: white;
+}
+
+#processing-table{
+	display: none;
+}
+
+
+#new-order-table{
+	display: block;
+}
+
+
+#ready-table{
+	display: none;
+}
+
+
+#dispatch-table{
+	display: none;
 }
