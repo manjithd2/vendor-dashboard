@@ -7,6 +7,10 @@ function processing(){
 	order.style.display="none";
 	ready.style.display="none";
 	processing.style.display="block";
+	document.getElementById('processing').style.background="white";
+	document.getElementById('new-order').style.background="none";
+	document.getElementById('ready').style.background="none";
+	document.getElementById('dispatch').style.background="none";
 }
 
 function neworder(){
@@ -18,6 +22,11 @@ function neworder(){
 	order.style.display="block";
 	ready.style.display="none";
 	processing.style.display="none";
+
+	document.getElementById('processing').style.background="none";
+	document.getElementById('new-order').style.background="white";
+	document.getElementById('ready').style.background="none";
+	document.getElementById('dispatch').style.background="none";
 }
 
 function ready(){
@@ -29,7 +38,13 @@ function ready(){
 	order.style.display="none";
 	ready.style.display="block";
 	processing.style.display="none";
+
+	document.getElementById('processing').style.background="none";
+	document.getElementById('new-order').style.background="none";
+	document.getElementById('ready').style.background="white";
+	document.getElementById('dispatch').style.background="none";
 }
+
 
 function dispatch(){
 	var processing = document.getElementById('processing-table');
@@ -40,4 +55,10 @@ function dispatch(){
 	order.style.display="none";
 	ready.style.display="none";
 	processing.style.display="none";
+
+
+	document.getElementById('processing').style.background="none";
+	document.getElementById('new-order').style.background="none";
+	document.getElementById('ready').style.background="none";
+	document.getElementById('dispatch').style.background="white";
 }

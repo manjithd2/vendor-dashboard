@@ -20,7 +20,15 @@
 	padding:15px;
 }
 
+.tab button:focus {
+    outline: none;
+}
+
 .order-nav{
+	background-color: #D8D8D8;
+}
+
+#new-order {
 	background-color: white;
 }
 
