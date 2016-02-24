@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vendor Dashboard</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style_vendor.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#us">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+      	<li><a href="#faq">FAQ</a></li>
+      	<li><a href="login.html">Login</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+	<div class="row top-space">
+		<form action="/registration" method="POST">
+  <p>
+    User name (4 characters minimum, only alphanumeric characters):
+    <input data-validation="length alphanumeric" data-validation-length="min4">
+  </p>
+  <p>
+    Year (yyyy-mm-dd):
+    <input data-validation="date" data-validation-format="yyyy-mm-dd">
+  </p>
+  <p>
+    Website:
+    <input data-validation="url">
+  </p>
+  <p>
+    <input type="submit">
+  </p>
+</form>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/jquery.form-validator.min.js"></script>
+<script> $.validate(); </script>
+	</div>
+</div>
+
+
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 contact">
+				<h2>Contact</h2>
+				<p>
+					Kravis Consultancy Service,<br>
+					16/A2, Anna Street,<br>
+					Shollinganallur,<br>
+					Chennai - 600199.<br>
+					004-49578685.<br>
+					vendorrelations@that1card.in
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2>Site Map</h2>
+				<a href="#">Home</a><br>
+				<a href="#benefits">Benefits</a><br>
+				<a href="#testimonials">Testimonials</a><br>
+				<a href="#faq">FAQ</a><br>
+				<a href="www.that1card.in">that1card.in</a>
+			</div>
+			<div class="col-md-4">
+				<h2>Social</h2>
+				
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script type="text/javascript">
+	$("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
+</body>
+</html>
