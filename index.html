@@ -9,6 +9,7 @@
 	<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	<script type="text/javascript" src="js/timeline.js"></script>
+	<script src="js/text-slider.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
@@ -178,7 +179,8 @@
 <section id="testimonial">
 	<div class="container">
 		<h2>Testimonials</h2>
-		<div class="quote">
+		<div class="slide">
+			<div class="slider-item quote">
 			<p class="paragraph">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -187,6 +189,29 @@
 			<p class="name">
 				Name of the person.
 			</p>
+			</div>
+			<div class="slider-item quote">
+			<p class="paragraph">
+				Lorem i
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+			<p class="name">
+				Name he person.
+			</p>
+			</div>
+
+
+		<script>
+			$('.slide').textSlider({
+
+			timeout: 5000,
+			slideTime: 750,
+			loop: 1
+
+			});
+
+		</script>
 		</div>
 	</div>
 </section>
