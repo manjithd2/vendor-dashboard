@@ -89,6 +89,17 @@ section{
 	padding-bottom: 50px;
 }
 
+section h2{
+	font-family: "Montserrat", sans-serif;
+}
+
+#vendor-process{
+	font-family: "Montserrat",sans-serif;
+	font-weight: bold;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
 header{
 	margin-bottom: 30px;
 }
@@ -312,7 +323,16 @@ footer a:hover{
 
 
 
+.vendor-icon{
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	top: 20%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
 
+}
 
 
 .cd-container {
@@ -494,7 +514,7 @@ footer a:hover{
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+ /* box-shadow: 0 3px 0 #d7e4ed;*/
 }
 .cd-timeline-content:after {
   content: "";
@@ -540,6 +560,13 @@ footer a:hover{
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
+
+.vendor-heading{
+	font-size: 20px !important;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
