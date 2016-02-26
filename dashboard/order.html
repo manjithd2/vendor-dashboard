@@ -210,18 +210,21 @@
                  </div> -->
                 <!-- /.row -->
                 <div class="row order-nav">
-                    <div id ="new-order" class="col-md-3 tab" onclick="neworder()">
+                    <div id ="new-order" class="col-md-2 tab" onclick="neworder()">
                         <button>NEW ORDER</button>
                     </div>
-                     <div id ="processing" class="col-md-3 tab" onclick="processing()">
+                     <div id ="processing" class="col-md-2 tab" onclick="processing()">
                         <button>PROCESSING</button>
                     </div>
-                    <div id ="ready" class="col-md-3 tab" onclick="ready()">
-                       <button>READY FOR DISPATCH</button>
+                    <div id ="ready" class="col-md-2 tab" onclick="ready()">
+                       <button>READY</button>
                     </div>
-                    <div id ="dispatch" class="col-md-3 tab" onclick="dispatch()">
+                    <div id ="dispatch" class="col-md-2 tab" onclick="dispatch()">
                        <button>DISPATCHED</button>
-                    </div>                    
+                    </div>           
+                    <div id ="cancel" class="col-md-2 tab" onclick="cancel()">
+                       <button>CANCELLED</button>
+                    </div>                
                 </div>
 
                 <div class="row  order-table">
@@ -408,6 +411,65 @@
                         </div>
                         <div id="dispatch-table" hidden>
                             <h2>Dispatched Orders</h2>
+                             <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Page</th>
+                                            <th>Visits</th>
+                                            <th>% New Visits</th>
+                                            <th>Revenue</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>/index.html</td>
+                                            <td>1265</td>
+                                            <td>32.3%</td>
+                                            <td>$321.33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/about.html</td>
+                                            <td>261</td>
+                                            <td>33.3%</td>
+                                            <td>$234.12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/sales.html</td>
+                                            <td>665</td>
+                                            <td>21.3%</td>
+                                            <td>$16.34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/blog.html</td>
+                                            <td>9516</td>
+                                            <td>89.3%</td>
+                                            <td>$1644.43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/404.html</td>
+                                            <td>23</td>
+                                            <td>34.3%</td>
+                                            <td>$23.52</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/services.html</td>
+                                            <td>421</td>
+                                            <td>60.3%</td>
+                                            <td>$724.32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/blog/post.html</td>
+                                            <td>1233</td>
+                                            <td>93.2%</td>
+                                            <td>$126.34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+                        </div>
+                         <div id="cancel-table">
+                            <h2>Cancelled Orders</h2>
                              <div class="table-responsive">
                                 <table class="table table-bordered table-hover table-striped">
                                     <thead>

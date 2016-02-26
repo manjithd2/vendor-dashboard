@@ -77,8 +77,32 @@ $(function() {
             label: "Processing",
             value: 20
         }],
+
         resize: true
     });
+
+    Morris.Donut({
+        element : 'morris-donut-chart-stock',
+        data: [{
+            label: "Instock",
+            value: 60
+        }, {
+            label: "Out of stock",
+            value: 40
+        }] ,
+        
+        resize: true
+    });
+
+    Morris.Bar({
+  element: 'bar-chart-payments',
+  data: [
+    { y: ' ', a: 100, b: 90 }
+   ],
+  xkey: 'y',
+  ykeys: ['a', 'b'],
+  labels: ['Completed', 'Pending']
+});
 
     // Line Chart
     Morris.Line({
