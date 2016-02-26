@@ -7,6 +7,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/validator.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style_vendor.css">
 </head>
@@ -39,26 +40,38 @@
 
 <div class="container">
 	<div class="row top-space">
-		<form action="/registration" method="POST">
-  <p>
-    User name (4 characters minimum, only alphanumeric characters):
-    <input data-validation="length alphanumeric" data-validation-length="min4">
-  </p>
-  <p>
-    Year (yyyy-mm-dd):
-    <input data-validation="date" data-validation-format="yyyy-mm-dd">
-  </p>
-  <p>
-    Website:
-    <input data-validation="url">
-  </p>
-  <p>
-    <input type="submit">
-  </p>
+		<h2 class="text-center">Account Creation</h2>
+<p class="text-center">Please enter the details</p>
+
+		<div class="col-md-8  account-creation">
+			<form id="AccountCreationForm" data-toggle="validator" role="form">
+  <div class="form-group">
+    <label for="inputName" class="control-label">Company Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="For example: Mantek Technology" required>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="The email seems to be invalid!" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Password</label><br>
+    <div class="form-group password">
+      <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+      <span class="help-block">Minimum of 6 characters</span>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Re-Type Password" required>
+      <div class="help-block with-errors"></div>
+    </div>
+    </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Continue</button>
+  </div>
 </form>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/jquery.form-validator.min.js"></script>
-<script> $.validate(); </script>
+		</div>
+  </div>
+<script>$('#AccountCreationForm').validator()</script>
 	</div>
 </div>
 

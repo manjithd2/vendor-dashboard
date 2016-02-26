@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vendor Dashboard</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/validator.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style_vendor.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#us">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+      	<li><a href="#faq">FAQ</a></li>
+      	<li><a href="login.html">Login</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+	<div class="row top-space">
+		<h2 class="text-center">Seller Information</h2>
+<p class="text-center">Please enter the details</p>
+
+		<div class="col-md-8  account-creation">
+	<h3>Seller Information</h3>
+			<form id="SellerForm" data-toggle="validator" role="form">
+  <div class="form-group">
+    <label for="inputName" class="control-label">Name*</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name" required>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email*</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email" data-error="The email seems to be invalid!" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail2" class="control-label">Alternate Email</label>
+    <input type="email" class="form-control" id="inputEmail2" placeholder="Enter your Email" data-error="The email seems to be invalid!">
+    <div class="help-block with-errors"></div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputNumber" class="control-label">Mobile Number*</label>
+    <input type="text" class="form-control" id="inputNumber" placeholder="Enter Your Mobile Number" data-error="Enter your number!" required>
+  </div>
+
+  <div class="form-group">
+    <label for="inputNumber2" class="control-label">Alternate Mobile Number</label>
+    <input type="text" class="form-control" id="inputNumber2" placeholder="Enter Your Alternate Mobile Number" >
+  </div>
+
+  <h3>Company Information</h3>
+  <div class="form-group">
+    <label for="inputCompanyName" class="control-label">Company Name*</label>
+    <input type="text" class="form-control" id="inputCompanyName" placeholder="Enter Your Company Name" required>
+  </div>
+  <div class="form-group">
+    <label for="inputDisplayName" class="control-label">Display Name*</label>
+    <input type="text" class="form-control" id="inputDisplayName" placeholder="Enter Your Name" required>
+  </div>
+  <div class="form-group">
+    <label for="inputDescName" class="control-label">Description</label>
+    <input type="text" class="form-control" id="inputDescName" placeholder="Enter a short desctiption about your company">
+  </div>
+  <div class="form-group">
+    <label for="inputTINName" class="control-label">TIN*</label>
+    <input type="text" class="form-control" id="inputTINName" placeholder="Enter Your Tax Identification Number" required> <div class="help-block with-errors"></div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputTANName" class="control-label">TAN</label>
+    <input type="text" class="form-control" id="inputTANName" placeholder="Enter Your Tax Deduction and Collection Account Number">
+  </div>
+
+  <h3>Bank Account Details</h3>
+  <div class="form-group">
+    <label for="inputACholderName" class="control-label">A/c Holder Name*</label>
+    <input type="text" class="form-control" id="inputacName" placeholder="Enter Your Account Holder name" data-error="Please enter your A/c Holder Name!" required> <div class="help-block with-errors"></div>
+  </div>
+    <div class="form-group">
+    <label for="inputACNumberName" class="control-label">A/c Number*</label>
+    <input type="text" class="form-control" id="inputacnumber" placeholder="Enter Your Account Number" data-error="Please enter your A/c number!" required> <div class="help-block with-errors"></div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputBranchName" class="control-label">Branch Name*</label>
+    <input type="text" class="form-control" id="inputbranchName" placeholder="Enter Your Branch name" data-error="Please enter your branch name !" required> <div class="help-block with-errors"></div>
+  </div>
+
+
+   <div class="form-group">
+    <label for="inputIFSC" class="control-label">IFSC*</label>
+    <input type="text" class="form-control" id="inputifsc" placeholder="Enter Your Branch name" data-error="Please enter your branch name !" required> <div class="help-block with-errors"></div>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Continue</button>
+  </div>
+</form>
+		</div>
+  </div>
+<script>$('#SellerForm').validator()</script>
+	</div>
+</div>
+
+
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 contact">
+				<h2>Contact</h2>
+				<p>
+					Kravis Consultancy Service,<br>
+					16/A2, Anna Street,<br>
+					Shollinganallur,<br>
+					Chennai - 600199.<br>
+					004-49578685.<br>
+					vendorrelations@that1card.in
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2>Site Map</h2>
+				<a href="#">Home</a><br>
+				<a href="#benefits">Benefits</a><br>
+				<a href="#testimonials">Testimonials</a><br>
+				<a href="#faq">FAQ</a><br>
+				<a href="www.that1card.in">that1card.in</a>
+			</div>
+			<div class="col-md-4">
+				<h2>Social</h2>
+						<ul class="social-icons icon-circle list-unstyled list-inline"> 
+				   <li> <a href="#"><i class="fa fa-facebook"></i></a></li> 
+				    <li> <a href="#"><i class="fa fa-youtube"></i></a></li>
+			       <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+			       <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+			        <li> <a href="#"><i class="fa fa-google-plus"></i></a></li> 
+			         <li> <a href="#"><i class="fa fa-instagram"></i></a></li> 
+	         	</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script type="text/javascript">
+	$("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
+</body>
+</html>
