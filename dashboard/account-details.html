@@ -20,11 +20,21 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
     <script src="js/order.js"></script>
-    <script src="js/payment.js"></script>
     <link rel="stylesheet" type="text/css" href="css/dashboard_style.css">
 
+
+    <style>
+    body{
+        font-family: "Oxygen", sans-serif;
+    }
+    #page-wrapper{
+        background-color: white;
+    }
+
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,168 +191,143 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
+                
+                <div class="row account-details">
+                   <form class = "form-horizontal" role = "form">
+                       <h3>Account Details</h3>
+                       <div class = "form-group">
+                          <label for = "company-name" class = "col-sm-2 control-label">Company Name</label>
+                            
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "company-name" placeholder = "Mantek Technologies">
+                          </div>
+                       </div>
+                       
+                       <div class = "form-group">
+                          <label for = "company-email-id" class = "col-sm-2 control-label">Email-id</label>
+                            
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "company-email-id" placeholder = "manjith@mantek.com">
+                          </div>
+                       </div>
+                       <h3>Seller Details</h3>
 
-                <!-- Page Heading -->
-                <!-- <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Orders
-                        </h1>
-                        <ol class="breadcrumb">
-                            <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                            </li>
-                            <li class="active">
-                                <i class="fa fa-table"></i> Orders
-                            </li>
-                        </ol>
-                    </div>
-                </div> -->
-                 <!-- <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Breadcrumb Primary</h2>
-                        <div class="btn-group btn-breadcrumb">
-                            <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-home"></i></a>
-                            <a href="#" class="btn btn-primary">Snippets</a>
-                            <a href="#" class="btn btn-primary">Breadcrumbs</a>
-                            <a href="#" class="btn btn-primary">Primary</a>
-                        </div>
-                    </div>
-                 </div> -->
-                <!-- /.row -->
-                <div class="row order-nav">
-                    <div id ="pending" class="col-md-3 tab" onclick="pending()">
-                        <button>PENDING PAYMENTS</button>
-                    </div>
-                     <div id ="completed" class="col-md-3 tab" onclick="completed()">
-                        <button>COMPLETED PAYMENTS</button>
-                    </div>                    
-                </div>
+                       <div class = "form-group">
+                          <label for = "name" class = "col-sm-2 control-label">Name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "name" placeholder = "Man">
+                          </div>
+                       </div>
+                       <div class = "form-group">
+                          <label for = "email-id" class = "col-sm-2 control-label">Email-id</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "email-id" placeholder = "abc@xyz.com">
+                          </div>
+                       </div>
 
-                <div class="row  order-table">
-                    <div class="col-lg-12">
-                        <div id="pending-table">
-                            <h2>Pending Payments</h2>
-                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Page</th>
-                                            <th>Visits</th>
-                                            <th>% New Visits</th>
-                                            <th>Revenue</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>/index.html</td>
-                                            <td>1265</td>
-                                            <td>32.3%</td>
-                                            <td>$321.33</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/about.html</td>
-                                            <td>261</td>
-                                            <td>33.3%</td>
-                                            <td>$234.12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/sales.html</td>
-                                            <td>665</td>
-                                            <td>21.3%</td>
-                                            <td>$16.34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/blog.html</td>
-                                            <td>9516</td>
-                                            <td>89.3%</td>
-                                            <td>$1644.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/404.html</td>
-                                            <td>23</td>
-                                            <td>34.3%</td>
-                                            <td>$23.52</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/services.html</td>
-                                            <td>421</td>
-                                            <td>60.3%</td>
-                                            <td>$724.32</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/blog/post.html</td>
-                                            <td>1233</td>
-                                            <td>93.2%</td>
-                                            <td>$126.34</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="table-button" onclick="completed()">COMPLETED PAYMENT</button>
-                            </div>   
-                        </div>
-                        <div id="completed-table" hidden >
-                            <h2>Completed Payments</h2>
-                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Page</th>
-                                            <th>Visits</th>
-                                            <th>% New Visits</th>
-                                            <th>Revenue</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>/index.html</td>
-                                            <td>1265</td>
-                                            <td>32.3%</td>
-                                            <td>$321.33</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/about.html</td>
-                                            <td>261</td>
-                                            <td>33.3%</td>
-                                            <td>$234.12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/sales.html</td>
-                                            <td>665</td>
-                                            <td>21.3%</td>
-                                            <td>$16.34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/blog.html</td>
-                                            <td>9516</td>
-                                            <td>89.3%</td>
-                                            <td>$1644.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/404.html</td>
-                                            <td>23</td>
-                                            <td>34.3%</td>
-                                            <td>$23.52</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/services.html</td>
-                                            <td>421</td>
-                                            <td>60.3%</td>
-                                            <td>$724.32</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/blog/post.html</td>
-                                            <td>1233</td>
-                                            <td>93.2%</td>
-                                            <td>$126.34</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>   
-                        </div>
-                    </div>
+                       <div class = "form-group">
+                          <label for = "alternate-email" class = "col-sm-2 control-label">Alternate Email-id</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "alternate-email" placeholder = "abc@xyz.com">
+                          </div>
+                       </div>
+                       <div class = "form-group">
+                          <label for = "mobile-no" class = "col-sm-2 control-label">Mobile No.</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "mobile-no" placeholder = "9798888888">
+                          </div>
+                       </div>
+
+                       <div class = "form-group">
+                          <label for = "alternate-mobile-no" class = "col-sm-2 control-label">Alternate Mobile No.</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "alternate-mobile-no" placeholder = "9798888888">
+                          </div>
+                       </div>
+
+                        <h3>Company Details</h3>
+
+                        <div class = "form-group">
+                          <label for = "company-name" class = "col-sm-2 control-label">Company Name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "company-name" placeholder = "mantek teck">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "display-name" class = "col-sm-2 control-label">Display Name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "display-name" placeholder = "mantek teck">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "description" class = "col-sm-2 control-label">Description</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "description" placeholder = "mantek teck">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "PAN" class = "col-sm-2 control-label">PAN Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "PAN" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "TIN" class = "col-sm-2 control-label">TIN Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "TIN" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "TAN" class = "col-sm-2 control-label">TAN Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "TAN" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+
+
+                       <h3>Account Details</h3>
+                        <div class = "form-group">
+                          <label for = "ac-name" class = "col-sm-2 control-label">A/c Holder name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "ac-name" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+                         <div class = "form-group">
+                          <label for = "ac-number" class = "col-sm-2 control-label">A/c Holder Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "ac-number" placeholder = "1235467">
+                          </div>
+                       </div>
+
+                         <div class = "form-group">
+                          <label for = "branch-name" class = "col-sm-2 control-label">Branch name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "branch-name" placeholder = "annanagar">
+                          </div>
+                       </div>
+
+                         <div class = "form-group">
+                          <label for = "ifsc" class = "col-sm-2 control-label">IFSC</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "ifsc" placeholder = "SAWDFW">
+                          </div>
+                       </div>
+                    <div class = "form-group">
+                          <div class = "col-sm-offset-2 col-sm-10">
+                             <button type = "submit" class = "btn btn-default">Save Changes</button>
+                          </div>
+                       </div>
+                    
+                </form>
+
+
+
                 </div>
-                <!-- /.row -->
 
             </div>
             <!-- /.container-fluid -->
