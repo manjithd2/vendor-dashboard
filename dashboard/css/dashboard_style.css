@@ -47,8 +47,9 @@
 	margin-top:20px;
 }
 
-
-
+#history-table{
+	background-color: white;
+}
 
 .order-nav{
 	background-color: #D8D8D8;
